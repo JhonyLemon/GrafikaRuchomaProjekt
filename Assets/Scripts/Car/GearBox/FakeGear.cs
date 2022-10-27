@@ -2,12 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class FakeGear
 {
-    public string gearIndex;
-    public float gearRatio;
-    public float minSpeed;
-    public float maxSpeed;
+    [SerializeField]
+    private string gearIndex;
+    [SerializeField]
+    private float gearRatio;
+    [SerializeField]
+    private float minSpeed;
+    [SerializeField]
+    private float maxSpeed;
+
+    public string GearIndex { get => gearIndex; set => gearIndex = value; }
+    public float GearRatio { get => gearRatio; set => gearRatio = value; }
+    public float MinSpeed { get => minSpeed; set => minSpeed = value; }
+    public float MaxSpeed { get => maxSpeed; set => maxSpeed = value; }
 
     public FakeGear(string gearIndex, float gearRatio, float minSpeed, float maxSpeed)
     {

@@ -30,7 +30,6 @@ public class CarPhysics : MonoBehaviour
         if (lighting != null)
         {
             lighting.ToggleFrontLights(controller.FrontLight);
-            lighting.BrakeLights(controller.HandBrake);
         }
     }
 
@@ -40,18 +39,20 @@ public class CarPhysics : MonoBehaviour
         carInfo.GearBox.UpdateGearBox(carInfo.SpeedKmPerH,controller.Throttle);
         foreach(WheelProperties wheel in wheels)
         {
-
+            wheel.updateSideWays();
             if (wheel.IsThrottleWheel) //throttle
             {
                 if (controller.Throttle > 0)
                 {
                     if (carInfo.SpeedKmPerH < 0)
                     {
+                        lighting.BrakeLights(true);
                         wheel.WheelCollider.brakeTorque = carInfo.BrakePower;
                         wheel.WheelCollider.motorTorque = 0f;
                     }
                     else
                     {
+                        lighting.BrakeLights(false);
                         wheel.WheelCollider.motorTorque = carInfo.ThrottlePower * carInfo.GearBox.GearRatio * Time.deltaTime * controller.Throttle;
                         wheel.WheelCollider.brakeTorque = 0f;
                     }
@@ -60,11 +61,13 @@ public class CarPhysics : MonoBehaviour
                 {
                     if (carInfo.SpeedKmPerH > 0)
                     {
+                        lighting.BrakeLights(true);
                         wheel.WheelCollider.brakeTorque = carInfo.BrakePower;
                         wheel.WheelCollider.motorTorque = 0f;
                     }
                     else
                     {
+                        lighting.BrakeLights(false);
                         wheel.WheelCollider.motorTorque = carInfo.ThrottlePower * carInfo.GearBox.GearRatio * Time.deltaTime * controller.Throttle;
                         wheel.WheelCollider.brakeTorque = 0f;
                     }
@@ -75,13 +78,14 @@ public class CarPhysics : MonoBehaviour
             {
                 wheel.WheelCollider.brakeTorque = carInfo.HandBrakePower * Time.deltaTime;
                 wheel.WheelCollider.motorTorque = 0f;
+                wheel.sideWaysCopy.stiffness -= 3f;
             }
 
             if (wheel.IsSteeringWheel) //steering
             {
                 wheel.WheelCollider.steerAngle = carInfo.TurnAngle * controller.Steering;
             }
-
+            wheel.applyNewSideWays();
             animateWheels(wheel);
         }
     }

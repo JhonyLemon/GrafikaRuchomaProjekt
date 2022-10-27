@@ -689,12 +689,12 @@ WheelCollider:
   m_Center: {x: 0.2, y: 0.15, z: 0}
   m_Radius: 0.3
   m_SuspensionSpring:
-    spring: 8000
-    damper: 200
+    spring: 80000
+    damper: 2000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
-  m_Mass: 6
+  m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.3
@@ -879,12 +879,12 @@ WheelCollider:
   m_Center: {x: -0.2, y: 0.15, z: 0}
   m_Radius: 0.3
   m_SuspensionSpring:
-    spring: 8000
-    damper: 200
+    spring: 80000
+    damper: 2000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
-  m_Mass: 6
+  m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.3
@@ -959,12 +959,12 @@ WheelCollider:
   m_Center: {x: 0.2, y: 0.15, z: 0}
   m_Radius: 0.3
   m_SuspensionSpring:
-    spring: 8000
-    damper: 200
+    spring: 80000
+    damper: 2000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
-  m_Mass: 6
+  m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.3
@@ -1039,12 +1039,12 @@ WheelCollider:
   m_Center: {x: -0.2, y: 0.15, z: 0}
   m_Radius: 0.3
   m_SuspensionSpring:
-    spring: 8000
-    damper: 200
+    spring: 80000
+    damper: 2000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
-  m_Mass: 6
+  m_Mass: 20
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.3
@@ -1929,7 +1929,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8019698233243549572}
   serializedVersion: 2
-  m_Mass: 75
+  m_Mass: 1000
   m_Drag: 0.01
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -2012,9 +2012,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60537019207d97046a0d1ac1023123ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brakePower: 200
-  handBrakePower: 2000
-  throttlePower: 1000
+  brakePower: 2000
+  handBrakePower: 20000
+  throttlePower: 10000
   steerAngle:
     serializedVersion: 2
     m_Curve:
@@ -2048,6 +2048,42 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  fakeGearBox:
+    fakeGears:
+    - gearIndex: R
+      gearRatio: 1
+      minSpeed: -20
+      maxSpeed: -0.5
+    - gearIndex: 0
+      gearRatio: 1
+      minSpeed: -0.5
+      maxSpeed: 0.5
+    - gearIndex: 1
+      gearRatio: 5
+      minSpeed: 0.5
+      maxSpeed: 50
+    - gearIndex: 2
+      gearRatio: 4
+      minSpeed: 50
+      maxSpeed: 120
+    - gearIndex: 3
+      gearRatio: 3.5
+      minSpeed: 120
+      maxSpeed: 180
+    - gearIndex: 4
+      gearRatio: 1
+      minSpeed: 180
+      maxSpeed: 190
+    - gearIndex: 5
+      gearRatio: 0.5
+      minSpeed: 190
+      maxSpeed: 195
+    - gearIndex: 6
+      gearRatio: 0.25
+      minSpeed: 195
+      maxSpeed: 200
+    maxTopSpeedForward: 200
+    maxTopSpeedBackword: -20
 --- !u!114 &2224789139198162741
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(WheelCollider))]
@@ -14,18 +15,31 @@ public class WheelProperties : MonoBehaviour
     private WheelCollider wheelCollider;
     [SerializeField]
     private GameObject wheel;
-    private float SideWaysStiffness;
+
+    private WheelFrictionCurve sideWays;
+    public WheelFrictionCurve sideWaysCopy;
 
     public bool IsSteeringWheel { get => isSteeringWheel; }
     public bool IsThrottleWheel { get => isThrottleWheel; }
     public bool IsBrakingWheel { get => isBrakingWheel; }
     public WheelCollider WheelCollider { get => wheelCollider; }
     public GameObject Wheel { get => wheel; }
-    public float SideWaysStiffness1 { get => SideWaysStiffness; set => SideWaysStiffness = value; }
+    public WheelFrictionCurve SideWays { get => sideWays; }
 
     void Start()
     {
         wheelCollider = GetComponent<WheelCollider>();
+        sideWays = wheelCollider.sidewaysFriction;
+    }
+
+    public void updateSideWays()
+    {
+        wheelCollider.sidewaysFriction = sideWays;
+        sideWaysCopy = sideWays.CloneViaFakeSerialization();
+    }
+    public void applyNewSideWays()
+    {
+        wheelCollider.sidewaysFriction = sideWaysCopy;
     }
 
 }

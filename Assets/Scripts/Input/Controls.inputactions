@@ -1,5 +1,5 @@
 {
-    "name": "VehicleControls",
+    "name": "Controls",
     "maps": [
         {
             "name": "Land",
@@ -57,6 +57,17 @@
                 {
                     "name": "up",
                     "id": "a242899f-69ae-4fb2-bfaa-4dfaa41955da",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "033a3c23-9a66-46e6-8ac1-1060ee40e2c8",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -68,6 +79,17 @@
                 {
                     "name": "down",
                     "id": "4c229a33-7f3d-4984-b2c8-8837c8b7f379",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "5926eff0-4b54-459c-af33-8ae18951033e",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -79,6 +101,17 @@
                 {
                     "name": "left",
                     "id": "2bd867f3-f5df-4124-9d51-044bb6a3425f",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "bfc14f79-437b-4056-8566-935266ecb67e",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -90,6 +123,17 @@
                 {
                     "name": "right",
                     "id": "78fe4589-a7fe-444d-99f2-0f41b1f0fd62",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "bde96e9d-c3bb-4acb-8794-5263e85b91b0",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -123,7 +167,7 @@
                 {
                     "name": "",
                     "id": "44dbc529-2258-4217-8c9c-3595d9c707f3",
-                    "path": "<Keyboard>/leftBracket",
+                    "path": "<Keyboard>/v",
                     "interactions": "",
                     "processors": "",
                     "groups": "Desktop",

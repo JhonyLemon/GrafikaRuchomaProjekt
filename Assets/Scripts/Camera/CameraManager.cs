@@ -34,7 +34,7 @@ public class CameraManager : MonoBehaviour
     [SerializeField]
     private Vector3 hoodViewLocation;
     [SerializeField]
-    private float fovHoodView = 90f;
+    private float fovHoodView = 100f;
 
     private void Start()
     {

@@ -2744,6 +2744,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: sedanSports
       objectReference: {fileID: 0}
+    - target: {fileID: 8471417372139011164, guid: 49435c163f0ae3f48975ff3f567c03e0, type: 3}
+      propertyPath: hoodViewLocation.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471417372139011164, guid: 49435c163f0ae3f48975ff3f567c03e0, type: 3}
+      propertyPath: hoodViewLocation.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471417372139011164, guid: 49435c163f0ae3f48975ff3f567c03e0, type: 3}
+      propertyPath: thirdPersonViewLocation.y
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8471417372139011164, guid: 49435c163f0ae3f48975ff3f567c03e0, type: 3}
+      propertyPath: thirdPersonViewLocation.z
+      value: -6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49435c163f0ae3f48975ff3f567c03e0, type: 3}
 --- !u!1001 &1711921197

@@ -26,6 +26,9 @@ public class FakeGearBox
 
     public float GearRatio { get => currentCopy.GearRatio; }
 
+    public float GearMinSpeed { get => currentCopy.MinSpeed; }
+
+
     public void UpdateGearBox(float speed, float input)
     {
         currentCopy.GearRatio = current.GearRatio;

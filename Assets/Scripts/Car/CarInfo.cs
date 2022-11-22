@@ -30,17 +30,17 @@ public class CarInfo : MonoBehaviour
     private FakeGearBox fakeGearBox = new FakeGearBox(
         new List<FakeGear>
         {
-            { new FakeGear("R",0.5f,-20,-0.5f) },
+            { new FakeGear("R",1f,-50,-0.5f) },
             { new FakeGear("0",1f,-0.5f,0.5f) },
-            { new FakeGear("1",5f,0.5f,50) },
-            { new FakeGear("2",4f,50,120) },
-            { new FakeGear("3",3.5f,120,180) },
-            { new FakeGear("4",1f,180,190) },
-            { new FakeGear("5",0.5f,190,195) },
-            { new FakeGear("6",0.25f,195,200) },
+            { new FakeGear("1",8f,0.5f,40) },
+            { new FakeGear("2",6f,40,85) },
+            { new FakeGear("3",5.5f,85,135) },
+            { new FakeGear("4",4f,135,180) },
+            { new FakeGear("5",2.5f,180,210) },
+            { new FakeGear("6",1.25f,210,230) },
         },
-        200f,
-        -20f
+        230f,
+        -30f
         );
 
     public float BrakePower { get => brakePower; }

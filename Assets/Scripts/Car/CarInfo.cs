@@ -21,9 +21,9 @@ public class CarInfo : MonoBehaviour
 
     [SerializeField]
     private AnimationCurve steerAngle = new AnimationCurve(
-        new Keyframe(0,40),
-        new Keyframe(200, 10),
-        new Keyframe(100, 20)
+        new Keyframe(0,45),
+        new Keyframe(235, 10),
+        new Keyframe(100, 28)
         );
 
     [SerializeField]

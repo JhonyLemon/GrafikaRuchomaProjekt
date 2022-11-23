@@ -9,52 +9,34 @@ public class CarEngine : MonoBehaviour
 {
     CarInfo carInfo;
     AudioSource audioSource;
-    float soundPitch;
 
     [SerializeField] float modifier;
+
+    [SerializeField]
+    private AnimationCurve soundPitch = new AnimationCurve(
+        new Keyframe(-10, 1),
+        new Keyframe(0, 1.3f),
+        new Keyframe(65, 3.8f)
+        );
 
     // Start is called before the first frame update
     void Start()
     {
         carInfo = GetComponent<CarInfo>();
         audioSource = GetComponent<AudioSource>();
-        soundPitch = 1f;
-        modifier = 0.3f;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        soundPitch = 1f;
-
-        if (carInfo.Speed * 3.6f > 0.3f)
-        {
-            soundPitch = 1f;
-        }
-
-        if (carInfo.Speed*3.6f > 10f)
-        {
-            soundPitch = 1.5f;
-        }
-
-        if (carInfo.Speed * 3.6f > 20f)
-        {
-            soundPitch = 2f;
-        }
-
-        if (carInfo.Speed * 3.6f > 30f)
-        {
-            soundPitch = 2.5f;
-        }
-
         if (carInfo.Speed * 3.6f > 0)
         {
-            audioSource.pitch = (((carInfo.Speed * 3.6f) - carInfo.GearBox.GearMinSpeed) / soundPitch) * modifier;
+            audioSource.pitch = soundPitch.Evaluate(Mathf.Abs((carInfo.Speed * 3.6f + 5) - (carInfo.GearBox.GearMinSpeed - 10)));
         }
         else
         {
-            audioSource.pitch = ((carInfo.Speed) / soundPitch) * modifier;
+            audioSource.pitch = soundPitch.Evaluate(Mathf.Abs((carInfo.Speed * 2.0f)));
         }
 
         print(carInfo.Speed);

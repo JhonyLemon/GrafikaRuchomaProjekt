@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using static System.Net.Mime.MediaTypeNames;
+using System.Threading;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -54,6 +55,9 @@ public class PauseMenu : MonoBehaviour
     }
     public void QuitGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(0);
+        PausedGame = false;
+        PauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
     }
 }

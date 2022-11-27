@@ -1894,6 +1894,7 @@ GameObject:
   - component: {fileID: 2224789139198162741}
   - component: {fileID: 8471417372139011164}
   - component: {fileID: 2529304824183479012}
+  - component: {fileID: 7714772939365305048}
   m_Layer: 0
   m_Name: sedanSports
   m_TagString: Player
@@ -2130,7 +2131,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backLeftWheel: {fileID: 2925681705554454447}
   backRightWheel: {fileID: 3346493851449350819}
-  antiRoll: 100
+  antiRoll: 1
+--- !u!65 &7714772939365305048
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8019698233243549572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3001709, y: 1.1879976, z: 2.4866028}
+  m_Center: {x: 0.014587402, y: 0.5226728, z: -0.034591675}
 --- !u!1 &8626278946913299256
 GameObject:
   m_ObjectHideFlags: 0

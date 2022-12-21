@@ -4893,6 +4893,7 @@ GameObject:
   - component: {fileID: 1445811862}
   - component: {fileID: 1445811861}
   - component: {fileID: 1445811860}
+  - component: {fileID: 1445811864}
   - component: {fileID: 1445811863}
   m_Layer: 0
   m_Name: Terrain
@@ -4961,7 +4962,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1445811863
+--- !u!114 &1445811863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445811859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fbde047030346745b667d1ee152d27e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tracks:
+  - {fileID: 8300000, guid: 52307d3949a5b8841bb1846d28294c8a, type: 3}
+  - {fileID: 8300000, guid: c9798a195ada52042ad207b9ef4e6089, type: 3}
+  - {fileID: 8300000, guid: 7c7e0a451e0875c41a1a5c5587dac193, type: 3}
+  - {fileID: 8300000, guid: 9a842519514fc334f85f911ccc9a0855, type: 3}
+  - {fileID: 8300000, guid: d458d229074185c4284168bc39e30675, type: 3}
+  - {fileID: 8300000, guid: a0aeb4c4ab3a44247b88378bd84e0213, type: 3}
+  - {fileID: 8300000, guid: cc296b5ea2a9eda4183f607f8bbea5d5, type: 3}
+  switchTrackKey: 289
+  playOnStart: 0
+  loopTracks: 1
+  shuffleTracks: 1
+--- !u!82 &1445811864
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4971,7 +4996,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0f8d4c26dc67c6740abd355d2ef78efb, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.85
   m_Pitch: 1

@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RandomTrack.unity
     guid: 60ec9c43eea912c408b952a6256dd9dc
+  - enabled: 1
+    path: Assets/Scenes/Tor testowy 2.unity
+    guid: 5c2aa200ec92436448374670b2ad6393
   m_configObjects: {}

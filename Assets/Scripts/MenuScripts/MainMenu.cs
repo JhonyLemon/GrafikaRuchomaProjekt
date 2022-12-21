@@ -60,6 +60,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+    public void PlaySpeedGame()
+    {
+        SceneManager.LoadScene(3);
+    }
 
     public void QuitGame()
     {

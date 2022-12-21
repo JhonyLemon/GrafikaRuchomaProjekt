@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="CameraManager">
+    <Position X="3.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAUBAAAAAqBAAAGADAAAAAAAAAgAAAAABAAAQAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Camera\CameraManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AntiRollBar">
+    <Position X="13" Y="12" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAAAAEAAAAAAAIAAgAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Car\AntiRollBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarEngine">
+    <Position X="14.5" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAIAAAAAAAAAAAAUAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\Scripts\Car\CarEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarInfo">
+    <Position X="12.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgIAIAACCBAAAgAQAIAAABBAAAABQACABQAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Car\CarInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarPhysics">
+    <Position X="15.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQAiAABAEEAAAAAAAAAAAAQAAAAACAEABAAAA=</HashCode>
+      <FileName>Assets\Scripts\Car\CarPhysics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FakeGear">
+    <Position X="10" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAIAAAAAUAAAAFAAAAAAAAAEAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Car\GearBox\FakeGear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FakeGearBox">
+    <Position X="12" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgAgFAAAAAAAAAAAAAAACAQAgAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Car\GearBox\FakeGearBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LightingManager">
+    <Position X="22" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Car\Lighting\LightingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LightProperties">
+    <Position X="20" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAAAABIABAAQAAQIAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Car\Lighting\LightProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WheelProperties">
+    <Position X="10" Y="12" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACQAAAQEAABEAAAAAAAIAAEQQAQBEAAAAQA=</HashCode>
+      <FileName>Assets\Scripts\Car\Wheel\WheelProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraController">
+    <Position X="6.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>CAABAAIAAKAAAAABQAAAAAAAAAgAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Input\Camera\CameraController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="@Controls" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <NestedTypes>
+      <Struct Name="@Controls.LandActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Input\Controls.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Interface Name="@Controls.ILandActions" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Input\Controls.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Interface>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAASAgEAGGAAAhAAAAAACBABAAAAAGCEAAAgAABQAAA=</HashCode>
+      <FileName>Assets\Scripts\Input\Controls.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VehicleController">
+    <Position X="10" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EgQBBCAACqAAAIgABAAAIASAAAAAkAAQAAAAEBQCAAA=</HashCode>
+      <FileName>Assets\Scripts\Input\Vehicle\VehicleController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="0.5" Y="7" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAIAACAAAAABAAABAICAAAABAAAAAIAACAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MenuScripts\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseMenu">
+    <Position X="3.5" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAQgAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAgQAAA=</HashCode>
+      <FileName>Assets\Scripts\MenuScripts\PauseMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MusicChanger">
+    <Position X="22" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAICAAAABAAAAACAAECgAAEAAAAAAAACAAABA=</HashCode>
+      <FileName>Assets\Scripts\Music\MusicChanger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecialArea">
+    <Position X="27.25" Y="5" Width="2" />
+    <NestedTypes>
+      <Enum Name="SpecialArea.AreaType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\SpecialArea\SpecialArea.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAKAAABAAAAAAAAAAAAARAAAAAAABAAAQAAA=</HashCode>
+      <FileName>Assets\Scripts\SpecialArea\SpecialArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StartingPoint">
+    <Position X="6.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\TrackGenerator\GenerateRandomTrack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GenerateRandomTrack">
+    <Position X="5.75" Y="12.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GenerateRandomTrack.VectorAndQuaternion" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\TrackGenerator\GenerateRandomTrack.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="GenerateRandomTrack.Direction" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\TrackGenerator\GenerateRandomTrack.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAACAAQQBAAAAAAAgAAAAgQAAoAAAAAAAAQAE=</HashCode>
+      <FileName>Assets\Scripts\TrackGenerator\GenerateRandomTrack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimerScript">
+    <Position X="20" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAMAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\TimerScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TMPro.Examples.ObjectSpin">
+    <Position X="0.75" Y="12.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="TMPro.Examples.ObjectSpin.MotionType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABQAAEAIAAAAAAAAAAAAQAAAEABAIAgAAAAAAQBAAEA=</HashCode>
+      <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TMPro.Examples.ShaderPropAnimator">
+    <Position X="24.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACAAAAAAAAAgAEAAAAAAAAAAAAAAAQAgAEA=</HashCode>
+      <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TMPro.Examples.SimpleScript">
+    <Position X="15.75" Y="12" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAABAAAAAAAEAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TMPro.Examples.VertexZoom">
+    <Position X="3.25" Y="12.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAFAAAAAAAAAAgIAMAAAAACCEA=</HashCode>
+      <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TMPro.Examples.WarpTextExample">
+    <Position X="24.5" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAEAACAAAAAAAAAFAAAABAAAAAAAIAAAAAACAEA=</HashCode>
+      <FileName>Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

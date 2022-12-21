@@ -9,6 +9,7 @@ public class MusicChanger : MonoBehaviour
     public bool playOnStart; // czy odtwarzaæ utwór po uruchomieniu skryptu
     public bool loopTracks; // czy zapêtliæ odtwarzanie utworów
     public bool shuffleTracks; // czy losowaæ utwory z listy
+    public bool pauseBefore = false;
 
 
     private AudioSource audioSource; // komponent AudioSource do odtwarzania muzyki
@@ -41,6 +42,18 @@ public class MusicChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (pauseBefore == false && PauseMenu.PausedGame == true)
+        {
+            audioSource.Stop();
+            pauseBefore = PauseMenu.PausedGame;
+        }
+
+        if (pauseBefore == true && PauseMenu.PausedGame == false)
+        {
+            audioSource.Play();
+            pauseBefore = PauseMenu.PausedGame;
+        }
+
         // Jeœli naciœniêto klawisz switchTrackKey, prze³¹cz na nastêpny utwór
         if (Input.GetKeyDown(switchTrackKey))
         {
@@ -48,10 +61,11 @@ public class MusicChanger : MonoBehaviour
         }
 
         // Jeœli bie¿¹cy utwór siê skoñczy³, prze³¹cz na nastêpny
-        if (!audioSource.isPlaying && loopTracks)
+        if (!audioSource.isPlaying && loopTracks && PauseMenu.PausedGame == false)
         {
             SwitchTrack();
-        }
+        }   
+        
     }
 
     // Metoda do prze³¹czania na nastêpny utwór
